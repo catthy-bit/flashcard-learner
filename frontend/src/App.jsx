@@ -1,3 +1,21 @@
+
+import {useState} from 'react';
+import AddFlashcard from '../AddFlashcard';
+import '.App.css';
+
+function App({addCard}) {
+  
+
+}
+
+
+
+/*
+const [viewAll, setViewAll] = useState([]); // view all cards stored in the list
+  const [makeCard, setMakeCard] = useState(null);
+  const [flipCard, setFlipCard] = useState(null); // reveals answer when clicked
+
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -119,3 +137,4 @@ function App() {
 }
 
 export default App
+*/
