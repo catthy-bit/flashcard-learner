@@ -1,4 +1,5 @@
 
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import './Flashcard.css'; 
+
 
