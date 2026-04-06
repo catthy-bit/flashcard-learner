@@ -1,16 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Flashcard Learner App
+## About 
+This application is designed for users to create questions that are formatted as flashcards and view their answers upon clicking it. 
 
-Currently, two official plugins are available:
+## Features
+This application includes: 
+* An overview feature that enables users to see all available flashcard questions at a glance;
+* A create or delete feature that allows users to make or delete desired flashcards;
+* A click feature that reveals a flashcard's answer and removes it after its been interacted with.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Comments
+### SPA
+This application contains one main page to handle all the core operations such as... In which case, the page utilises ... to give the illusion that multiple pages have been used.
 
-## React Compiler
+### CRUD Operations
+On a database level, this application performs all CRUD operations and is utilised through...
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Presentation and User Experience
+#### Visual Presentation
+To enhance users' experience when interacting with this application, the design has been kept minimal and easy on the eye to minimise eye straining. 
 
-## Expanding the ESLint configuration
+#### Interaction and Flow
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### Performance and Responsiveness
+
+#### Accessibility
