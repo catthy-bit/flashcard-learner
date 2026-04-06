@@ -17,6 +17,25 @@ export default function AddFlashcard({addCard}) {
             setAnswer('');
         }
     }
+
+    return (
+        <div className="flashcard-wrapper">
+            <input
+                value = {question}
+                onChange = {(e) => setQuestion (e.target.value)}
+                placeholder="Type your question here"
+                className="question-input"
+            />
+
+            <input
+                value = {answer}
+                onChange = {(e) => setAnswer (e.target.value)}
+                placeholder="Type your answer here"
+                className="answer-input"
+            />
+            <button onClick={makeFlashcard}>Add Card</button>
+        </div>
+    )
     
 }
 
