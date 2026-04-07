@@ -16,7 +16,6 @@ export default function FlashCards( { card }) {
         setIsUsed(true);
     }
     
-    
     return (
         <div className={isUsed ? 'hide-card' : 'card'} onClick={flipCard}>
             {isFlipped ? card.answer : card.question}
