@@ -10,17 +10,12 @@ export default function ViewCards({cards, deletedCard}) {
         <div>
             {/* For each c in cards, create a flashcard using card's data. 
                 Where each c contains a question and an answer
+                If delete button is clicked (from FlashCards), delete card from array
             */}
             {cards.map((c) => (
-                <FlashCards key={c.id} card = {c}/>
+                <FlashCards key={c.id} card = {c} deletedCard={deletedCard}/>
             ))}
             
-            {/* For each c in cards that matches with selected deleted card,
-                delete from cards collection
-            */}
-            {cards.map((c) => (
-                <FlashCards key={c.id} card= {c} deletedCard={deletedCard}/>
-            ))}
         </div>
         
     ) 
