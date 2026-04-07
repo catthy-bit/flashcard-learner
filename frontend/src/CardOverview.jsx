@@ -2,16 +2,24 @@
 import FlashCards from './Flashcard';
 import './App.css';
 
-// Function: View all Flashcards 
+// Main Feature: View all Flashcards 
+// Takes cards as a parameter when used by other files
+export default function ViewCards({cards, deletedCard}) {
 
-export default function ViewCards({cards}) {
-
-    // same as for each c in cards, create a flashcard using card's data
-    // c passes individual question and answer
     return (
         <div>
+            {/* For each c in cards, create a flashcard using card's data. 
+                Where each c contains a question and an answer
+            */}
             {cards.map((c) => (
                 <FlashCards key={c.id} card = {c}/>
+            ))}
+            
+            {/* For each c in cards that matches with selected deleted card,
+                delete from cards collection
+            */}
+            {cards.map((c) => (
+                <FlashCards key={c.id} card= {c} deletedCard={deletedCard}/>
             ))}
         </div>
         
