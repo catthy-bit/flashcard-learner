@@ -1,12 +1,47 @@
 
 import {useState} from 'react';
-import AddFlashcard from '../AddFlashcard';
-import '.App.css';
+import AddFlashcard from './AddFlashcard';
+import ViewCards from './CardOverview';
+import './App.css';
 
-function App({addCard}) {
+export default function App() {
+
+  const [cards, setCards] = useState([]);
+
+  const handleFlashCard = (question, answer) => {
+    setCards([...cards, {
+      id: Date.now(),
+      question: question,
+      answer: answer,
+    }]);
+  }
+
+  return (
+    <div>
+      
+    </div>
+  )
+
   
 
 }
+
+/*
+function App({addCard, cards}) {
+  
+  const [cards, setCards] = useState([]);
+
+
+
+  return (
+
+
+  )
+
+  
+
+}
+  */
 
 
 
