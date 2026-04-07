@@ -1,7 +1,7 @@
 
 import {useState} from 'react';
 
-export default function FlashCards( { card, editedCard }) {
+export default function FlashCards( { card, editedCard, deletedCard }) {
     
     const [isFlipped, setIsFlipped] = useState(false);
     const [isUsed, setIsUsed] = useState(false);
@@ -61,7 +61,7 @@ export default function FlashCards( { card, editedCard }) {
             </div> 
 
             <button onClick={editCard}>Edit Card</button>
-
+            <button onClick={() => deletedCard(card.id)}>Delete</button>
             
             <div className={isUsed ? 'hide-card' : 'card'} onClick={flipCard}>
                 {isFlipped ? card.answer : card.question}
