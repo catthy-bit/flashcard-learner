@@ -6,10 +6,15 @@ import './App.css';
 
 export default function App() {
 
-  const [cards, setCards] = useState([]);
+  const [allCards, setAllCards] = useState([]);
+
+  //for switching between viewing all cards and adding new card to deck
+  const [isSwitched, setIsSwitched] = useState(false); 
+  //if isSwitched == true -> View all
+  //if isSwitched == false -> Add new flashcard
 
   const handleFlashCard = (question, answer) => {
-    setCards([...cards, {
+    setAllCards([...allCards, {
       id: Date.now(),
       question: question,
       answer: answer,
@@ -18,9 +23,30 @@ export default function App() {
 
   return (
     <div>
-      
+      <button onClick={() => isSwitched(true)}>View All</button>
+      <button onClick={() => isSwitched(false)}>Add New Card</button>
+      <div className={isSwitched ? 'card-overview' : 'add-new-flashcard'}>
+        {isSwitched ? <ViewCards cards={allCards}></ViewCards> : <AddFlashcard addCard={handleFlashCard}></AddFlashcard>}
+      </div>
     </div>
-  )
+  ) 
+
+   
+
+    /*
+     <div className="flashcard-features">
+
+    </div>
+    <div className="flashcard-features">
+      <AddFlashcard addCard={handleFlashCard}></AddFlashcard>
+      
+      <div className="show-all-cards">
+        <ViewCards cards={allCards}></ViewCards>
+        <button onClick={allCards}>View All</button>
+      </div>
+
+    </div>*/
+ 
 
   
 
