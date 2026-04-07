@@ -11,6 +11,7 @@ export default function ViewCards({cards, deletedCard}) {
             {/* For each c in cards, create a flashcard using card's data. 
                 Where each c contains a question and an answer
                 If delete button is clicked (from FlashCards), delete card from array
+                Is also passed from App.jsx
             */}
             {cards.map((c) => (
                 <FlashCards key={c.id} card = {c} deletedCard={deletedCard}/>
