@@ -11,7 +11,7 @@ export default function ViewCards({cards}) {
     return (
         <div>
             {cards.map((c) => (
-                <FlashCards key={c.id} cards = {c}/>
+                <FlashCards key={c.id} card = {c}/>
             ))}
         </div>
         
