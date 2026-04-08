@@ -3,7 +3,6 @@ import {useState} from 'react';
 import AddFlashcard from './AddFlashcard';
 import ViewCards from './CardOverview';
 import './App.css';
-import FlashCards from './Flashcard';
 
 export default function App() {
   // creates an array for all flashcards
@@ -29,6 +28,17 @@ export default function App() {
     setAllCards(remainingCards);
   }
 
+  // takes a new id, question and answer to edit
+  const saveEditedFlashCard = (id, question, answer) => {
+    /* iterates through each card in array and checks if card matches card id. 
+       If yes, call the card array and update its question and answer only
+       If no, leaves card as is and stops updating
+    */
+    const savingCards = allCards.map(card => card.id === id ? {...card, question, answer} : card);
+    // Saves updated array
+    setAllCards(savingCards);
+  }
+
   return (
     <div>
       {/* Buttons' states are read when specific button is clicked */}
@@ -40,7 +50,7 @@ export default function App() {
       */}
       
       <div className={isSwitched ? 'card-overview' : 'add-new-flashcard'}>
-        {isSwitched ? <ViewCards cards={allCards} deletedCard={removeFlashCard}></ViewCards> : <AddFlashcard addCard={handleFlashCard}></AddFlashcard>}
+        {isSwitched ? <ViewCards cards={allCards} deletedCard={removeFlashCard} saveEditedCard={saveEditedFlashCard}></ViewCards> : <AddFlashcard addCard={handleFlashCard}></AddFlashcard>}
       </div>
     </div>
   ) 
