@@ -20,6 +20,7 @@
    outline: none;
    background-color: transparent;
    color: rgb(151, 154, 178);
+   align-items: center;
 }
 
 
@@ -29,7 +30,6 @@
     background-color: rgb(106, 197, 90);
     color: white;
     border-color: rgb(90, 175, 74);
-    min-width: max-content;
 }
 
 
