@@ -1,5 +1,5 @@
 
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import AddFlashcard from './AddFlashcard';
 import ViewCards from './CardOverview';
 import './App.css';
@@ -12,6 +12,12 @@ export default function App() {
   const [isSwitched, setIsSwitched] = useState(false); 
   //if isSwitched == true -> View all
   //if isSwitched == false -> Add new flashcard
+
+  useEffect(() => {
+    fetch('http://127.0.0.1:8000')
+      .then(res => res.json())
+      .then(data => setAllCards(data.flashcards))
+  }, [])
 
   // Takes all cards part of the card list and 
   const handleFlashCard = (question, answer) => {
