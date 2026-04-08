@@ -16,7 +16,34 @@
 }
 
 .hide-card {
-    opacity: 0;
-    transition: opacity 2000ms ease-out;
-
+    display: none;
 }
+
+.edit-btn, .delete-btn, .save-btn, .cancel-btn {
+    border-radius: 7px;
+    padding: 8px;
+
+    color: white;
+}
+
+.edit-btn, .save-btn {
+    background-color: rgb(74, 152, 247);
+}
+
+.edit-btn:active, .save-btn:active {
+    background-color: rgb(57, 119, 195);
+}
+
+.delete-btn, .cancel-btn {
+    background-color: rgb(247, 69, 69);
+}
+
+.delete-btn:active , .cancel-btn:active {
+    background-color: rgb(199, 55, 55);
+}
+
+
+
+
+
+
