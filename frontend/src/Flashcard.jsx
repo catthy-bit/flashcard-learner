@@ -71,7 +71,7 @@ export default function FlashCards( { card, deletedCard, savedCard}) {
 
             <div className={isUsed ? 'hide-card' : 'card'} onClick={flipCard}>
                 {isFlipped ? card.answer : card.question}
-                {isFlipped && <button onClick={useCard}>Done</button>}
+                {isFlipped && <button className="done-btn" onClick={useCard}>Done</button>}
             </div>
             
         </div>
