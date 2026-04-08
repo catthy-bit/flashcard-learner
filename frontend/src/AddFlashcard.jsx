@@ -18,7 +18,7 @@ export default function AddFlashcard({addCard}) {
 
     return (
         <div className="flashcard-wrapper">
-            <input
+            <input 
                 value = {question}
                 onChange = {(e) => setQuestion (e.target.value)}
                 placeholder="Type your question here"
@@ -31,7 +31,7 @@ export default function AddFlashcard({addCard}) {
                 placeholder="Type your answer here"
                 className="answer-input"
             />
-            <button onClick={makeFlashcard}>Add Card</button>
+            <button className="add-btn" onClick={makeFlashcard}>Add Card</button>
         </div>
     )
     
