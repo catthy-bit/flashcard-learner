@@ -14,35 +14,71 @@ export default function App() {
   //if isSwitched == false -> Add new flashcard
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000')
+    // fetch backend 
+    fetch('http://localhost:8000/flashcards')
       .then(res => res.json())
       .then(data => setAllCards(data.flashcards))
   }, [])
 
-  // Takes all cards part of the card list and 
-  const handleFlashCard = (question, answer) => {
-    setAllCards([...allCards, {
-      id: Date.now(),
-      question: question,
-      answer: answer,
-    }]);
+  // (Read)
+  const fetchCards = () => {
+    /* Calls mysql for current flashcards &
+       React retrieves all flashcards
+    */
+    fetch('http://localhost:8000/flashcards')
+      .then(res => res.json())
+      .then(data => setAllCards(data.flashcards))
   }
-  
+
+  // Takes all cards part of the card list and 
+  // (Create)
+  const handleFlashCard = (question, answer) => {
+    fetch('http://localhost:8000/flashcards', {
+      method: 'POST',
+      headers: { 'Content-Type' : 'application/json' },
+      body: JSON.stringify({question , answer})
+    })
+    .then(res => res.json())
+    .then(() => fetchCards())
+  }
+
+  // (Delete)
   const removeFlashCard = (id) => {
-    //
+    fetch(`http://localhost:8000/flashcards/${id}`, {
+      method: 'DELETE',
+    })
+    .then(res => res.json())
+    .then(() => fetchCards(
+
+    ))
+    /*
     const remainingCards = allCards.filter(card => card.id != id);
-    setAllCards(remainingCards);
+    setAllCards(remainingCards);*/
   }
 
   // takes a new id, question and answer to edit
+  // (Update)
   const saveEditedFlashCard = (id, question, answer) => {
+
+    fetch(`http://localhost:8000/flashcards/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type' : 'application/json' },
+      body: JSON.stringify({question , answer})
+    })
+    .then(res => res.json())
+    .then(() => fetchCards(
+
+    ))
     /* iterates through each card in array and checks if card matches card id. 
        If yes, call the card array and update its question and answer only
        If no, leaves card as is and stops updating
     */
+
+    /*
     const savingCards = allCards.map(card => card.id === id ? {...card, question, answer} : card);
     // Saves updated array
     setAllCards(savingCards);
+    */
   }
 
   return (
