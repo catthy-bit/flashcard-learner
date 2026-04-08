@@ -1,4 +1,14 @@
-.counter {
+
+body {
+  box-sizing: border-box;
+  background-color: rgb(255, 238, 140);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Flashcard*/
+
+
+/*.counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -182,3 +192,4 @@
     border-right-color: var(--border);
   }
 }
+*/
