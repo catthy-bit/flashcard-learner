@@ -14,7 +14,7 @@ export default function ViewCards({cards, deletedCard, saveEditedCard}) {
                 Is also passed from App.jsx
             */}
             {cards.map((c) => (
-                <FlashCards key={c.id} card = {c} deletedCard={deletedCard} savedCard={saveEditedCard}/>
+                <FlashCards key={c[0]} card = {c} deletedCard={deletedCard} savedCard={saveEditedCard}/>
             ))}
             
         </div>

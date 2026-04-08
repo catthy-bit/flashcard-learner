@@ -21,13 +21,13 @@ export default function FlashCards( { card, deletedCard, savedCard}) {
 
     const editCard = () => {
         setIsEdited(true);
-        setEditQuestion(card.question);
-        setEditAnswer(card.answer);
+        setEditQuestion(card[1]);
+        setEditAnswer(card[2]);
     }
 
     const saveEditedCard = () => {
         setIsEdited(false);
-        savedCard(card.id, editQuestion, editAnswer);
+        savedCard(card[0], editQuestion, editAnswer);
     }
 
     const cancelEditedCard = () => {
@@ -66,13 +66,13 @@ export default function FlashCards( { card, deletedCard, savedCard}) {
             
             {!isEdited && 
                 <div className={isUsed ? 'hide-card' : 'card'} onClick={flipCard}>
-                    {isFlipped ? card.answer : card.question}
+                    {isFlipped ? card[2] : card[1]}
                     {isFlipped && <button className="done-btn" onClick={useCard}>Done</button>}
                     
                     {!isUsed &&
                     <div>
                         <button className="edit-btn" onClick={editCard}>Edit Card</button>
-                        <button className="delete-btn" onClick={() => deletedCard(card.id)}>Delete</button>
+                        <button className="delete-btn" onClick={() => deletedCard(card[0])}>Delete</button>
                     </div>
                     }
 
