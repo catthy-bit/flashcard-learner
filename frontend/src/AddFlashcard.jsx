@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import './AddFlashcard.css';
 // Function: Create card
 
 export default function AddFlashcard({addCard}) {

@@ -1,5 +1,6 @@
 
 import {useState} from 'react';
+import './Flashcard.css';
 
 export default function FlashCards( { card, deletedCard, savedCard}) {
     
@@ -36,7 +37,7 @@ export default function FlashCards( { card, deletedCard, savedCard}) {
     return (
         // Role 1: If true, card input can be edited and saved or, edited and cancelled
         // Role 2: Clicking on the card flips its and shows question
-        <div>
+        <div className="flashcard-container">
             <div className={isEdited ? 'edit-input' : 'leave-input'}>
                 {isEdited && 
                     <input 
