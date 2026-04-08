@@ -1,0 +1,27 @@
+
+/*For uniform flashcard design */
+.flashcard-wrapper {
+    background-color: rgb(248, 246, 237);
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgb(190, 186, 161);
+    padding: 20px;
+    min-width: 35px;
+    min-height: 55px;
+}
+
+.question-input, .answer-input{
+   border: none;
+   outline: none;
+   background-color: transparent;
+   color: rgb(151, 154, 178);
+}
+
+
+.add-btn {
+    border-radius: 7px;
+    padding: 20px;
+    background-color: rgb(106, 197, 90);
+    color: white;
+}
+
+
