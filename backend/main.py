@@ -1,4 +1,4 @@
-import mysql 
+import mysql.connector
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from pydantic import BaseModel
