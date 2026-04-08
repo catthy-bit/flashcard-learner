@@ -1,1 +1,13 @@
 
+
+/* Uniform Card*/
+.card { 
+    background-color: rgb(248, 244, 223);
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgb(171, 163, 124);
+    padding: 20px;
+    min-width: 35px;
+    min-height: 55px;
+}
+
+
