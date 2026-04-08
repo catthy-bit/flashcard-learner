@@ -10,8 +10,9 @@
     box-shadow: 3px 3px 5px rgba(185, 183, 165, 0.773);
     padding: 15px;
     margin: 20px;
-    min-width: max-content;
-    min-height: auto;
+    max-width: 75%;
+
+    align-items: center;
 
 }
 
@@ -20,16 +21,15 @@
    outline: none;
    background-color: transparent;
    color: rgb(151, 154, 178);
-   align-items: center;
 }
 
 
 .add-btn {
     border-radius: 7px;
     padding: 20px;
-    background-color: rgb(106, 197, 90);
+    background-color: rgba(106, 197, 90, 0.919);
     color: white;
-    border-color: rgb(90, 175, 74);
+    border-color: rgb(106, 197, 90);
 }
 
 
