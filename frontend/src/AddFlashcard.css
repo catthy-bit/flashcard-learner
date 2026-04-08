@@ -1,9 +1,13 @@
 
 /*For uniform flashcard design */
 .flashcard-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    
     background-color: rgb(248, 246, 237);
     border-radius: 7px;
-    box-shadow: 3px 3px 5px rgba(228, 227, 214, 0.74);
+    box-shadow: 3px 3px 5px rgb(208, 207, 195);
     padding: 15px;
     margin: 20px;
     min-width: max-content;
@@ -24,6 +28,7 @@
     padding: 20px;
     background-color: rgb(106, 197, 90);
     color: white;
+    border-color: rgb(90, 175, 74);
 }
 
 
