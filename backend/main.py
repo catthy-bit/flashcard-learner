@@ -46,6 +46,30 @@ def create_flashcards(card: Flashcard):
     conn.close()
     return {"message": "Flashcard created"}
 
+# PUT Route (Update)
+@app.put("/flashcards/{id}")
+def update_flashcards(id: int, card: Flashcard):
+    conn = get_database()
+    cursor = conn.cursor()
+
+    cursor.execute("UPDATE flashcards SET question = %s, answer = %s WHERE id = %s", (card.question, card.answer, id))
+
+    conn.commit()
+    conn.close()
+    return {"message": "Flashcard updated"}
+
+# DELETE Route (Delete)
+@app.delete("/flashcards/{id}")
+def delete_flashcards(id: int):
+    conn = get_database()
+    cursor = conn.cursor()
+
+    cursor.execute("DELETE FROM flashcards WHERE id = %s", (id,))
+
+    conn.commit()
+    conn.close()
+    return {"message": "Flashcard deleted"}
+
 
 
 
