@@ -4,6 +4,8 @@ from contextlib import asynccontextmanager
 
 # Sets up database and table on start up
 
+app = FastAPI()
+
 def get_database():
     return mysql.connector.connect(
         host="localhost",
@@ -11,6 +13,8 @@ def get_database():
         password="s3cur31smysw0rd?",
         database="flashcards_db"
     )
+
+
 
 
 
