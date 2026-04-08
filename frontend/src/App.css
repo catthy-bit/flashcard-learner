@@ -5,6 +5,34 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Button display */
+.view-all-btn, .add-new-card-btn {
+  border-radius: 7px;
+  border: none;
+  padding: 8px;
+
+  color: white;
+}
+
+.view-all-btn {
+  background-color: rgb(74, 152, 247);
+  border-color: rgb(57, 119, 195);
+  
+}
+
+.add-new-card-btn {
+  background-color: rgba(106, 197, 90, 0.859);
+  border-color: rgba(92, 170, 78, 0.859);
+}
+
+.view-all-btn:active {
+  background-color: rgb(57, 119, 195);
+}
+
+.add-new-card-btn:active {
+  background-color: rgba(92, 170, 78, 0.859);
+}
+
 /*Flashcard*/
 
 
