@@ -4,7 +4,7 @@ import './App.css';
 
 // Main Feature: View all Flashcards 
 // Takes cards as a parameter when used by other files
-export default function ViewCards({cards, deletedCard}) {
+export default function ViewCards({cards, deletedCard, saveEditedCard}) {
 
     return (
         <div>
@@ -14,7 +14,7 @@ export default function ViewCards({cards, deletedCard}) {
                 Is also passed from App.jsx
             */}
             {cards.map((c) => (
-                <FlashCards key={c.id} card = {c} deletedCard={deletedCard}/>
+                <FlashCards key={c.id} card = {c} deletedCard={deletedCard} savedCard={saveEditedCard}/>
             ))}
             
         </div>
