@@ -55,14 +55,14 @@ export default function FlashCards( { card, deletedCard, savedCard}) {
 
                 {isEdited && 
                     <div>
-                        <button onClick={saveEditedCard}>Save</button>
-                        <button onClick={cancelEditedCard}>Cancel</button>
+                        <button className="save-btn" onClick={saveEditedCard}>Save</button>
+                        <button className="cancel-btn" onClick={cancelEditedCard}>Cancel</button>
                     </div>
                 }
             </div> 
 
-            <button onClick={editCard}>Edit Card</button>
-            <button onClick={() => deletedCard(card.id)}>Delete</button>
+            <button className="edit-btn" onClick={editCard}>Edit Card</button>
+            <button className="delete-btn" onClick={() => deletedCard(card.id)}>Delete</button>
             
             <div className={isUsed ? 'hide-card' : 'card'} onClick={flipCard}>
                 {isFlipped ? card.answer : card.question}
