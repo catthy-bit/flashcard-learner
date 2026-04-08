@@ -15,7 +15,7 @@ def get_database():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="s3cur31smysw0rd?",
+        password="smiggle1",
         database="flashcards_db"
     )
 
