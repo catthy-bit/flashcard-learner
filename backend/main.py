@@ -2,10 +2,18 @@ import mysql.connector
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 # Sets up database and table on start up
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173/"],
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 class Flashcard(BaseModel):
     question: str
