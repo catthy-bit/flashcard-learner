@@ -23,7 +23,7 @@ def get_database():
     return mysql.connector.connect(
         host="127.0.0.1",
         user="root",
-        password="smiggle1",
+        password="s3cur31smysw0rd?",
         database="flashcards_db"
     )
 
@@ -77,6 +77,9 @@ def delete_flashcards(id: int):
     conn.commit()
     conn.close()
     return {"message": "Flashcard deleted"}
+
+if __name__ == "__main__":
+    print(get_database())
 
 
 
