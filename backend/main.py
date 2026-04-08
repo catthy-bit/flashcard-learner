@@ -19,6 +19,7 @@ def get_database():
         database="flashcards_db"
     )
 
+# GET Route (Read)
 @app.get("/flashcards")
 def read_flashcards():
     conn = get_database()
@@ -33,6 +34,17 @@ def read_flashcards():
     conn.close()
     return {"flashcards": data}
 
+# POST Route (Create)
+@app.post("/flashcards")
+def create_flashcards(card: Flashcard):
+    conn = get_database()
+    cursor = conn.cursor()
+
+    cursor.execute("INSERT INTO flashcards (question, answer) VALUES (%s, %s)" , (card.question, card.answer))
+
+    conn.commit()
+    conn.close()
+    return {"message": "Flashcard created"}
 
 
 
