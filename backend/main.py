@@ -10,7 +10,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"]
 )
@@ -21,7 +21,7 @@ class Flashcard(BaseModel):
 
 def get_database():
     return mysql.connector.connect(
-        host="localhost",
+        host="127.0.0.1",
         user="root",
         password="smiggle1",
         database="flashcards_db"
