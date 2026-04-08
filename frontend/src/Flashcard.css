@@ -19,7 +19,8 @@
     display: none;
 }
 
-.edit-btn, .delete-btn, .save-btn, .cancel-btn {
+/* Button display */
+.edit-btn, .delete-btn, .save-btn, .cancel-btn, .done-btn {
     border-radius: 7px;
     border: none;
     padding: 8px;
@@ -29,20 +30,32 @@
 
 .edit-btn, .save-btn {
     background-color: rgb(74, 152, 247);
+    border-color: rgb(57, 119, 195);
     margin: 8px;
 }
 
 .delete-btn, .cancel-btn {
     background-color: rgb(247, 69, 69);
+    border-color: rgb(199, 55, 55);
     margin: 8px;
 }
 
+.done-btn {
+    background-color: rgba(106, 197, 90, 0.859);
+    border-color: rgba(92, 170, 78, 0.859);
+}
+
+/* Buttons when interacted with i.e. clicked on */
 .edit-btn:active, .save-btn:active {
     background-color: rgb(57, 119, 195);
 }
 
 .delete-btn:active , .cancel-btn:active {
     background-color: rgb(199, 55, 55);
+}
+
+.done-btn:active {
+    background-color: rgba(92, 170, 78, 0.859);
 }
 
 
