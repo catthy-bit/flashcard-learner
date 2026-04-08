@@ -64,20 +64,21 @@ export default function FlashCards( { card, deletedCard, savedCard}) {
             </div> 
 
             
+            {!isEdited && 
+                <div className={isUsed ? 'hide-card' : 'card'} onClick={flipCard}>
+                    {isFlipped ? card.answer : card.question}
+                    {isFlipped && <button className="done-btn" onClick={useCard}>Done</button>}
+                    
+                    {!isUsed &&
+                    <div>
+                        <button className="edit-btn" onClick={editCard}>Edit Card</button>
+                        <button className="delete-btn" onClick={() => deletedCard(card.id)}>Delete</button>
+                    </div>
+                    }
 
-            <div className={isUsed ? 'hide-card' : 'card'} onClick={flipCard}>
-                {isFlipped ? card.answer : card.question}
-                {isFlipped && <button className="done-btn" onClick={useCard}>Done</button>}
-                
-                {!isUsed &&
-                <div>
-                    <button className="edit-btn" onClick={editCard}>Edit Card</button>
-                    <button className="delete-btn" onClick={() => deletedCard(card.id)}>Delete</button>
                 </div>
-                }
-                
-            </div>
-            
+            }
+               
         </div>
 
     )
