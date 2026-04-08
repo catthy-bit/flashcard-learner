@@ -1,13 +1,22 @@
 
 
 /* Uniform Card*/
-.card-overview { 
-    background-color: rgb(248, 244, 223);
+.card { 
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(248, 246, 237);
     border-radius: 7px;
-    box-shadow: 3px 3px 5px rgb(171, 163, 124);
-    padding: 20px;
-    min-width: 35px;
-    min-height: 55px;
+    box-shadow: 3px 3px 10px rgba(171, 171, 167, 0.822);
+    padding: 15px;
+    margin: 25px;
+    min-width: min-content;
+
+    align-items: center;
 }
 
+.hide-card {
+    opacity: 0;
+    transition: opacity 2000ms ease-out;
 
+}
