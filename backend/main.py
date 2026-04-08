@@ -21,9 +21,9 @@ class Flashcard(BaseModel):
 
 def get_database():
     return mysql.connector.connect(
-        host="127.0.0.1",
+        host="localhost",
         user="root",
-        password="s3cur31smysw0rd?",
+        password="newpass123",
         database="flashcards_db"
     )
 
