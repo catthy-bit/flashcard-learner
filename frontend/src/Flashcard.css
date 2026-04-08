@@ -21,6 +21,7 @@
 
 .edit-btn, .delete-btn, .save-btn, .cancel-btn {
     border-radius: 7px;
+    border: none;
     padding: 8px;
 
     color: white;
@@ -28,14 +29,16 @@
 
 .edit-btn, .save-btn {
     background-color: rgb(74, 152, 247);
-}
-
-.edit-btn:active, .save-btn:active {
-    background-color: rgb(57, 119, 195);
+    margin: 8px;
 }
 
 .delete-btn, .cancel-btn {
     background-color: rgb(247, 69, 69);
+    margin: 8px;
+}
+
+.edit-btn:active, .save-btn:active {
+    background-color: rgb(57, 119, 195);
 }
 
 .delete-btn:active , .cancel-btn:active {
