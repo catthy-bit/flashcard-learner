@@ -1,8 +1,9 @@
-
+import sqlite3 
 from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
-def read_root(): 
-    return {"Hello" : "World"}
+def get_database():
+    return sqlite3.connect('flashcards.db')
+
+
