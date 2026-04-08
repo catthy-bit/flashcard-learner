@@ -1,7 +1,7 @@
 
 import {useState} from 'react';
 
-export default function FlashCards( { card, editedCard, deletedCard, saveEditedCard}) {
+export default function FlashCards( { card, deletedCard, savedCard}) {
     
     const [isFlipped, setIsFlipped] = useState(false);
     const [isUsed, setIsUsed] = useState(false);
@@ -26,7 +26,7 @@ export default function FlashCards( { card, editedCard, deletedCard, saveEditedC
 
     const saveEditedCard = () => {
         setIsEdited(false);
-        editedCard(editQuestion, editAnswer);
+        savedCard(card.id, editQuestion, editAnswer);
     }
 
     const cancelEditedCard = () => {
