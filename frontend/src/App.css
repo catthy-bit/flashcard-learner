@@ -5,7 +5,7 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Button display */
+/* Design for Button display */
 .view-all-btn, .add-new-card-btn {
   border-radius: 7px;
   border: none;
@@ -32,6 +32,7 @@ body {
 .add-new-card-btn:active {
   background-color: rgba(92, 170, 78, 0.859);
 }
+
 
 /*Flashcard*/
 
