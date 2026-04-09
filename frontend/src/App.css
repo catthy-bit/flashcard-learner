@@ -15,18 +15,19 @@ body {
 }
 
 .navigational-buttons {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding: 27px;
 }
 
 .view-all-btn {
   background-color: rgb(23, 123, 246);
   border-color: rgb(17, 92, 183);  
+  margin: 5px;
 }
 
 .add-new-card-btn {
   background-color: rgba(52, 207, 80, 0.859);
   border-color: rgb(44, 174, 68);
+  margin: 5px;
 }
 
 .view-all-btn:hover, .view-all-btn:active {
