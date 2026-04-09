@@ -84,9 +84,10 @@ export default function App() {
   return (
     <div>
       {/* Buttons' states are read when specific button is clicked */}
-      <button className="view-all-btn" onClick={() => setIsSwitched(true)}>View All</button>
-      <button className="add-new-card-btn" onClick={() => setIsSwitched(false)}>Add New Card</button>
-      
+      <div className="Navigational-buttons">
+        <button className="view-all-btn" onClick={() => setIsSwitched(true)}>View All</button>
+        <button className="add-new-card-btn" onClick={() => setIsSwitched(false)}>Add New Card</button>
+      </div>
       {/* If switched is true, view all flashcards. Else, show a add new flashcard button 
           Should delete a card from entire collection when removeFlashCard is used
       */}
