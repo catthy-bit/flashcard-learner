@@ -20,9 +20,11 @@
     align-items: center;
 }
 
+
 .hide-card {
     display: none;
 }
+
 
 /* Design for buttons */
 .edit-btn, .delete-btn, .save-btn, .cancel-btn, .done-btn {
@@ -80,6 +82,9 @@
     width: 100%;
 }
 
+.leave-input {
+    display: none;
+}
 
 
 
