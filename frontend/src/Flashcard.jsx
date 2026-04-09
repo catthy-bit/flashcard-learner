@@ -42,6 +42,7 @@ export default function FlashCards( { card, deletedCard, savedCard}) {
                 {isEdited && 
                     <input 
                         value={editQuestion}
+                        placeholder="Click here to edit your question."
                         onChange = {(e) => setEditQuestion (e.target.value)}
                         className="edit-question-input"
                     />
@@ -50,6 +51,7 @@ export default function FlashCards( { card, deletedCard, savedCard}) {
                 {isEdited && 
                     <input 
                         value={editAnswer}
+                        placeholder="Click here to edit your answer."
                         onChange = {(e) => setEditAnswer (e.target.value)}
                         className="edit-answer-input"
                     />
