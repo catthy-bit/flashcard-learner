@@ -32,6 +32,14 @@
     color: white;
 }
 
+.done-btn {
+    margin-top: 8px;
+}
+
+.btn-row-2 {
+    margin-top: 5px;
+}
+
 .edit-btn, .save-btn {
     background-color: rgb(23, 123, 246);
     border-color: rgb(17, 92, 183);
