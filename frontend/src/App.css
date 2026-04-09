@@ -14,6 +14,10 @@ body {
   color: white;
 }
 
+.navigational-buttons {
+  padding: 25px;
+}
+
 .view-all-btn {
   background-color: rgb(23, 123, 246);
   border-color: rgb(17, 92, 183);  
