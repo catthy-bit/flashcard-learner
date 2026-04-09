@@ -55,6 +55,25 @@ This application supports full CRUD functionality. Where:
 This is handled by the `main.py`, `flashcards.db` using FastAPI and MySQL. This ensures persistent data storage and avoid data loss from occuring when the page is refreshed.
 
 ## Presentation and User Experience
-### 1) Visual Presentation
+### Visual Presentation
 #### Aesthetics
-To enhance users' experience when interacting with this application, the design has been kept minimal and easy on the eye to avoid eye straining.  
+To enhance users' experience when interacting with this application, the design has been kept minimal and easy on the eye to avoid eye straining. Additionally, it was designed to be user friendly and to provide visual indicators that aid individuals using the application.
+
+To curate the application, the following discusses in detail below the qualities that help to enhance the user experience of this app and thus, achieve the app’s intentions.
+
+#### Colour
+To create a minimalist appeal, CSS was used to design each state the application takes on. In which, it focuses on the visual appearance of the app and how it enhances users’ experience when interacting with the app. For example, a shadow appearing on the flashcard when the user first hovers on the page.
+
+To accomplish a tailored user experience, a colour palette was carefully chosen to achieve a consistent look throughout the website while also being visually appealing and minimalistic. The colours picked also take into consideration different users that have different levels of colour blindness, to increase accessibility of this website.
+
+In addittion to this, the colours used for the buttons represent di'
+
+This was achieved by using WhoCanUse.com which visually represents how colour contrast is perceived by different users with different types of visual impairments
+
+#### Interactive buttons
+Since CSS primarily deals with the design of websites, it is an invaluable tool when it comes to enhancing user engagement and interaction with websites. For example, using the hover effect to change the colour of the View All button when the user hovers over it. This increases user interactivity with the app and improves navigation for first time users.
+
+### Accessibility
+To make this app easy to navigate for different types of users - experienced and inexperienced, each state features buttons that clearly defines its function and contains text where user input is needed. In which, it allows users to enter different states when clicked on. In doing so, it clearly explain what each feature entails, reducing ambiguity for users and enhancing users’ overall experience with the website.
+
+
