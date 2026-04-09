@@ -1,7 +1,7 @@
 
 body {
   box-sizing: border-box;
-  background-color: rgb(255, 238, 140);
+  background-color: rgb(123, 217, 222);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -15,22 +15,22 @@ body {
 }
 
 .view-all-btn {
-  background-color: rgb(74, 152, 247);
-  border-color: rgb(57, 119, 195);
+  background-color: rgb(23, 123, 246);
+  border-color: rgb(17, 92, 183);
   
 }
 
 .add-new-card-btn {
-  background-color: rgba(106, 197, 90, 0.859);
-  border-color: rgba(92, 170, 78, 0.859);
+  background-color: rgba(52, 207, 80, 0.859);
+  border-color: rgb(44, 174, 68);
 }
 
 .view-all-btn:active {
-  background-color: rgb(57, 119, 195);
+  background-color: rgb(17, 92, 183);
 }
 
 .add-new-card-btn:active {
-  background-color: rgba(92, 170, 78, 0.859);
+  background-color: rgb(44, 174, 68);
 }
 
 
