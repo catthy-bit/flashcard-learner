@@ -6,35 +6,46 @@
     flex-direction: column;
     
     background-color: rgb(248, 246, 237);
+    border-color:  1px solid rgb(98, 98, 98);
+
     border-radius: 7px;
-    box-shadow: 3px 3px 10px rgba(171, 171, 167, 0.822);
-    padding: 15px;
+    padding: 30px;
     margin: 25px;
-    min-width: min-content;
+    min-width: max-content;
 
     align-items: center;
 
+}
+
+.flashcard-wrapper:hover {
+    opacity: 1;
+    box-shadow: 3px 3px 10px rgb(108, 187, 192);
 }
 
 .question-input, .answer-input{
    border: none;
    outline: none;
    background-color: transparent;
-   color: rgb(20, 20, 20);
+   color: rgb(0, 0, 0);
    padding: 15px;
-
    width: 100%;
-   
+   align-items: center;
 }
 
+.question-input:hover , .answer-input:hover{
+   color: rgb(69, 69, 69);
+   
+}
 
 .add-btn {
     border-radius: 7px;
     padding: 8px;
-    background-color: rgba(106, 197, 90, 0.859);
-    
+    background-color: rgba(52, 207, 80, 0.859);    
     color: white;
-    border-color: rgb(141, 223, 120);
+    border-color: transparent;
 }
 
+.add-btn:hover, .add-btn:active {
+    background-color: rgb(44, 174, 68);
+}
 

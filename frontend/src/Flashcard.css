@@ -26,9 +26,8 @@
 /* Design for buttons */
 .edit-btn, .delete-btn, .save-btn, .cancel-btn, .done-btn {
     border-radius: 7px;
-    border: none;
+    border: transparent;
     padding: 8px;
-
     color: white;
 }
 
@@ -50,15 +49,15 @@
 }
 
 /* Design when buttons are clicked on */
-.edit-btn:active, .save-btn:active {
+.edit-btn:hover, .save-btn:hover, .edit-btn:active, .save-btn:active {
     background-color: rgb(17, 92, 183);
 }
 
-.delete-btn:active , .cancel-btn:active {
+.delete-btn:hover , .cancel-btn:hover, .delete-btn:active , .cancel-btn:active {
     background-color: rgb(199, 55, 55);
 }
 
-.done-btn:active {
+.done-btn:hover, .done-btn:active {
     background-color: rgb(44, 174, 68);
 }
 

@@ -16,8 +16,7 @@ body {
 
 .view-all-btn {
   background-color: rgb(23, 123, 246);
-  border-color: rgb(17, 92, 183);
-  
+  border-color: rgb(17, 92, 183);  
 }
 
 .add-new-card-btn {
@@ -25,11 +24,11 @@ body {
   border-color: rgb(44, 174, 68);
 }
 
-.view-all-btn:active {
+.view-all-btn:hover, .view-all-btn:active {
   background-color: rgb(17, 92, 183);
 }
 
-.add-new-card-btn:active {
+.add-new-card-btn:hover, .add-new-card-btn:active {
   background-color: rgb(44, 174, 68);
 }
 
