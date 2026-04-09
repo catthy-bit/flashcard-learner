@@ -7,7 +7,7 @@ import './App.css';
 export default function ViewCards({cards, deletedCard, saveEditedCard}) {
 
     return (
-        <div>
+        <div className="card">
             {/* For each c in cards, create a flashcard using card's data. 
                 Where each c contains a question and an answer
                 If delete button is clicked (from FlashCards), delete card from array
