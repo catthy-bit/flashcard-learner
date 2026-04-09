@@ -15,7 +15,8 @@ body {
 }
 
 .navigational-buttons {
-  padding: 25px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .view-all-btn {
@@ -35,6 +36,7 @@ body {
 .add-new-card-btn:hover, .add-new-card-btn:active {
   background-color: rgb(44, 174, 68);
 }
+
 
 
 /*Flashcard*/
