@@ -73,6 +73,10 @@
 }
 
 /*Design for editing inputs fields*/
+.edit-input {
+    display: block;
+}
+
 .edit-question-input, .edit-answer-input {
     border: none;
     outline: none;
@@ -82,9 +86,6 @@
     width: 100%;
 }
 
-.leave-input {
-    display: none;
-}
 
 
 
