@@ -84,7 +84,7 @@ export default function App() {
   return (
     <div>
       {/* Buttons' states are read when specific button is clicked */}
-      <div className="Navigational-buttons">
+      <div className="navigational-buttons">
         <button className="view-all-btn" onClick={() => setIsSwitched(true)}>View All</button>
         <button className="add-new-card-btn" onClick={() => setIsSwitched(false)}>Add New Card</button>
       </div>
