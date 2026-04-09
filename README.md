@@ -66,8 +66,6 @@ To create a minimalist appeal, CSS was used to design each state the application
 
 To accomplish a tailored user experience, a colour palette was carefully chosen to achieve a consistent look throughout the website while also being visually appealing and minimalistic. The colours picked also take into consideration different users that have different levels of colour blindness, to increase accessibility of this website.
 
-In addittion to this, the colours used for the buttons represent di'
-
 This was achieved by using WhoCanUse.com which visually represents how colour contrast is perceived by different users with different types of visual impairments
 
 #### Interactive buttons
@@ -75,5 +73,8 @@ Since CSS primarily deals with the design of websites, it is an invaluable tool 
 
 ### Accessibility
 To make this app easy to navigate for different types of users - experienced and inexperienced, each state features buttons that clearly defines its function and contains text where user input is needed. In which, it allows users to enter different states when clicked on. In doing so, it clearly explain what each feature entails, reducing ambiguity for users and enhancing users’ overall experience with the website.
+
+### Responsiveness
+To ensure the app can respond to smaller screen sizes, `@import media screen` was implemented to cater to different screen sizes, ensuring a wide range of users can experience the application.
 
 
